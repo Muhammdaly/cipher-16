@@ -1,7 +1,7 @@
 library	ieee;
 use ieee.std_logic_1164.all;
 
-entity CombinationalCircuit is 
+entity combinational_circuit is 
 	port(
 	ABUS, BBUS : in std_logic_vector(15 downto 0);
 	CTRL : in std_logic_vector(3 downto 0);
@@ -9,7 +9,7 @@ entity CombinationalCircuit is
 	);
 end entity;
 
-architecture rtl of CombinationalCircuit is 
+architecture rtl of combinational_circuit is 
 signal tmp_out1,tmp_out2,tmp_out3: std_logic_vector(15 downto 0);
 signal lut_out: std_logic_vector(7 downto 0);
 begin
